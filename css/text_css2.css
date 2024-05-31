@@ -1,0 +1,17 @@
+@charset "utf-8";
+h2 {
+  color: red;
+}
+
+#p1{
+  background-color: burlywood;
+}
+
+#p2{
+  font-family: 궁서체;
+  line-height: 2;
+}
+
+.coffee{
+  font-weight: bold;
+}
