@@ -1,0 +1,32 @@
+div{
+  width: 400px;
+  height: 400px;
+  border: 1px solid black;
+  background: url(../html/img/watermelon.jpg) no-repeat;
+}
+
+/* 원본이 사각형 크기로 잘려서 보임 */
+#bg1{
+  background-size: auto;
+}
+
+/* 고정 크기가 축소 */
+#bg2{
+  background-size: 300px;
+}
+
+/* 가변으로 크기가 축소 */
+#bg3{
+  background-size: 80%;
+  background-position: bottom right;
+}
+
+/* 비율에 맞게 크기를 키우다 가로, 세로에 닿으면 끝. 공백이 생길 수 있음 */
+#bg4{
+  background-size:  contain;
+}
+
+/* 그냥 커짐.공백 없음*/
+#bg5{
+  background-size: cover;
+}
