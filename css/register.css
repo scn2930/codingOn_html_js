@@ -1,0 +1,37 @@
+#container{
+  width: 800px;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: beige;
+}
+
+form{
+  width: 50%;
+  margin: 0 auto;
+}
+
+ul li{
+  line-height: 2;
+  list-style: none;
+}
+
+/* ul li:first-child label {
+  margin-right: 30px;
+}
+
+ul li:last-child label {
+  margin-right: 58px;
+} */
+label{
+  width: 100px;
+  float: left;
+}
+select{
+  width: 150px;
+  height: 20px;
+}
+button{
+  margin: 5px 5px 0px 0px;
+  padding: 5px 10px;
+  cursor: pointer;
+}

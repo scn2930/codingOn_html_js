@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+*{
+  margin : 0;
+  padding: 0;
+}
+
+#container{
+  width: 1000px;
+  margin: 0 auto;
+
+}
+
+header{}
+
+nav{
+  height: 80px;
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+ul{
+}
+ul li{
+  padding: 0 20px;
+  display: inline-block;
+  list-style: none;
+  line-height: 80px;
+}
+/* ul li:hover a{
+  padding: 10px;
+  color: red;
+  font-size: 20px;
+} */
+
+ul li a{
+  color: chocolate;
+  text-decoration: none;
+}
+ul li a:hover{
+  color: rgb(236, 255, 127);
+}
+section{
+  margin-top: 20px;
+}
