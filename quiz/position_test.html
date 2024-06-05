@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>0605 position 실습</title>
+  <style>
+    body{
+      height: 2000px;
+    }
+    #container{
+      position: relative;
+      width: 500px;
+      height: 500px;
+      border: 3px solid black;
+    }
+    #container div{
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      line-height: 100px;
+    }
+    .box1{
+      position: absolute;
+      top: 30px;
+      left: 50px;
+      background-color: orange;
+    }
+    .box2{
+      position: absolute;
+      bottom: 100px;
+      right: 30px;
+      background-color: yellow;
+    }
+    .box3{
+      position: fixed;
+      top: 100px;
+      right: 100px;
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="box1">item1</div>
+    <div class="box2">item2</div>
+    <div class="box3">item3</div>
+  </div>
+</body>
+</html>

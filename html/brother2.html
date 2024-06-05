@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>형제 선택자</title>
+  <style>
+    form{
+      width: 500px;
+    }
+    input:disabled{
+      background-color: #ddd;
+      border: 1px solid #ccc;
+    }
+    input:checked + span{
+      color: blue;
+    }
+    input:focus{
+      background-color: coral;
+    }
+
+    /* a만 선택했을때와 같음 */
+    a:link, a:visited {
+      color: black;
+      text-decoration: none;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+    a:active{
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+  <form action="">
+    <fieldset>
+      <legend>사용자 정보 </legend>
+      <label for="name">이름 <input type="text" disabled></label>
+      <br>
+      <label for="email">이메일 <input type="email"></label>
+    </fieldset>
+    <fieldset>
+      <legend>취미</legend>
+      <label for=""><input type="radio" name="hobby" value="movie"><span>영화 감상</span></label>
+      <label for=""><input type="radio" name="hobby" value="sports"><span>운동</span></label>
+      <label for=""><input type="radio" name="hobby" value="game"><span>컴퓨터 게임</span> </label>
+    </fieldset>
+  </form>
+  <h3>추천 사이트 </h3>
+  <a href="https://www.naver.com" target="_blank">네이버</a>
+  <a href="https://www.google.com" target="_blank">구글</a>
+</body>
+</html>

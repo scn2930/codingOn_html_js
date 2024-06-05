@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>overflow</title>
+  <style>
+    div{
+    float: left;
+     width: 300px;
+     height: 260px;
+     margin: 10px;
+     padding: 10px;
+    }
+    #ex1{
+      overflow: visible;
+      background-color: bisque;
+    }
+    #ex2{
+      overflow: scroll;
+      background-color: pink;
+    }
+    #ex3{
+      overflow: hidden;
+      background-color: rgb(129, 142, 243);
+    }
+    #ex4{
+      overflow: auto;
+      background-color: rgb(143, 247, 109);
+    }
+  </style>
+</head>
+<body>
+  <!-- 요소의 크기보다 내용이 더 길때, 내용을 어떻게 보여줄지 정하는 속성  -->
+  <div id="ex1">
+    <h2>overflow 속성 - visible: default값</h2>
+    <p>
+      요소의 크기보다 내용이 더 길때, 내용을 어떻게 보여줄지 정하는 속성<br>
+      - visible : 자식 요소가 부모 요소의 범위를 넘어가도 그대로 보여줌. default값<br>
+      - scroll : 스크롤바가 자동으로 추가되어 스크롤 할 수 있다.<br>
+      - hidden : 부모 요소의 범위를 넘어가는 자식 요소의 부분은 보이지 않는다.<br>
+      - auto : 내용이 넘지 않으면 그대로 표시하고, 넘어가면 scroll과 유사.<br>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae in fugit iusto officiis voluptate ipsam sunt exercitationem, necessitatibus, minus illum aliquam ut ad aliquid cum praesentium recusandae ducimus nam! Cum.
+    </p>
+  </div>
+  <div id="ex2">
+    <h2>overflow 속성 - scroll</h2>
+    <p>요소의 크기보다 내용이 더 길때, 내용을 어떻게 보여줄지 정하는 속성<br>
+      - visible : 자식 요소가 부모 요소의 범위를 넘어가도 그대로 보여줌. default값<br>
+      - scroll : 스크롤바가 자동으로 추가되어 스크롤 할 수 있다.<br>
+      - hidden : 부모 요소의 범위를 넘어가는 자식 요소의 부분은 보이지 않는다.<br>
+      - auto : 내용이 넘지 않으면 그대로 표시하고, 넘어가면 scroll과 유사.<br>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis nulla voluptates consequuntur. Possimus culpa aut, libero accusantium suscipit dicta porro hic cumque reiciendis asperiores facilis labore omnis tempore neque recusandae.
+    </p>
+  </div>
+  <div id="ex3">
+    <h2>overflow 속성 - hidden</h2>
+    <p>요소의 크기보다 내용이 더 길때, 내용을 어떻게 보여줄지 정하는 속성<br>
+      - visible : 자식 요소가 부모 요소의 범위를 넘어가도 그대로 보여줌. default값<br>
+      - scroll : 스크롤바가 자동으로 추가되어 스크롤 할 수 있다.<br>
+      - hidden : 부모 요소의 범위를 넘어가는 자식 요소의 부분은 보이지 않는다.<br>
+      - auto : 내용이 넘지 않으면 그대로 표시하고, 넘어가면 scroll과 유사.<br>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis eligendi tempore incidunt corporis similique, autem corrupti? Voluptatibus minus placeat, ea doloribus, perferendis laboriosam, neque quisquam nihil ullam explicabo error sunt?
+    </p>
+  </div>
+  <div id="ex4">
+    <h2>overflow 속성 - auto</h2>
+    <p>요소의 크기보다 내용이 더 길때, 내용을 어떻게 보여줄지 정하는 속성<br>
+      - visible : 자식 요소가 부모 요소의 범위를 넘어가도 그대로 보여줌. default값<br>
+      - scroll : 스크롤바가 자동으로 추가되어 스크롤 할 수 있다.<br>
+      - hidden : 부모 요소의 범위를 넘어가는 자식 요소의 부분은 보이지 않는다.<br>
+      - auto : 내용이 넘지 않으면 그대로 표시하고, 넘어가면 scroll과 유사.<br>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis eligendi tempore incidunt corporis similique, autem corrupti? Voluptatibus minus placeat, ea doloribus, perferendis laboriosam, neque quisquam nihil ullam explicabo error sunt?
+    </p>
+  </div>
+</body>
+</html>
