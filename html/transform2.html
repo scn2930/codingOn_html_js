@@ -6,15 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>transform 속성2</title>
   <style>
-    .a{
+    div{
       width: 150px;
       height: 80px;
       background-color: greenyellow;
     }
+    .a{}
 
     .b{
-      width: 150px;
-      height: 80px;
       background-color: greenyellow;
       transform: rotate(20deg);
     }
@@ -23,8 +22,6 @@
     }
 
     .c{
-      width: 150px;
-      height: 80px;
       background-color: greenyellow;
       transform: translateX(50px);
     }
@@ -33,13 +30,15 @@
     }
 
     .d{
-      width: 150px;
-      height: 80px;
-      background-color: greenyellow;
       transform: scale(1.5);
     }
     .d:hover{
       transform: scale(0.5);
+    }
+    
+    .e{}
+    .e:hover{
+      transform: skew(20deg, 30deg);
     }
 
   </style>
@@ -56,5 +55,8 @@
 
   <h2>transform: scale(0.5)</h2>
   <div class="d">Hello World!</div>
+
+  <h2>transform: skew(0.5)</h2>
+  <div class="e">Hello World!</div>
 </body>
 </html>
