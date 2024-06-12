@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>비교, 논리 연산자</title>
+</head>
+<body>
+  <script>
+    // let num1 = 8; let num2 = 5;
+    let num1 = 8, num2 = 5;
+
+    // 비교 연산자 : <, >, ==, ===, !=, <=, >=
+    console.log(num1 > num2);
+    console.log(num1 < num2);
+    console.log(num1 == num2);
+    console.log(num1 === num2);
+    console.log(num1 != num2);
+    console.log(num1 >= num2);
+    console.log(num1 <= num2);
+
+
+  //  논리 연산자 : 논리합 - or(||), 논리곱 - and(&&), not(!)
+
+  console.log((num1 > num2) && (num1< num2));
+  console.log((num1 > num2) || (num1< num2));
+  console.log((num1 > num2));
+  console.log(!(num1 > num2));
+
+  // 조건(삼항) 연산자 -> (조건문) ? true : false
+    let result;
+    result = (10 > 11) ? "참입니다" : "거짓입니다.";
+    document.write("결과 값 : " + result, '<br>');
+
+
+    // 복합 대입 연산자 : 
+    let val = 100;
+    document.write("결과 값 : " + val, '<br>');
+
+    // val = val + 4;
+    val += 4;
+    document.write("결과 값 : " + val, '<br>');
+
+    // val = val - 4;
+    val -= 4;
+    document.write("결과 값 : " + val, '<br>');
+
+    // val = val * 4;
+    val *= 4;
+    document.write("결과 값 : " + val, '<br>');
+
+
+  </script>
+</body>
+</html>
