@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배열 객체</title>
+</head>
+<body>
+
+  <script>
+    // let std1 = 80;
+    // let std2 = 90;
+    // let std3 = 70;
+    let student = [80, 90, 70];
+
+    console.log(student[0]);
+    console.log(student[1]);
+    console.log(student[2]);
+
+    // 장바구니 배열
+    // 1. 선언과 함께 초기화
+    let cart = ["딸기", "바나나", "수박"];
+    document.write(cart);
+    console.log(cart);
+
+    // 2. 빈 배열을 생성
+    let seasons = [];
+
+    // 데이터 저장
+    seasons[0] = '봄';
+    seasons[1] = '여름';
+    seasons[2] = '가을';
+    seasons[3] = '겨울';
+
+    console.log(seasons);
+    
+    // 데이터 수정
+    seasons[3] = 'winter';
+
+    console.log(seasons);
+
+    for(let i = 0; i < seasons.length; i++){
+      console.log(seasons[i]);
+    }
+
+
+  </script>
+</body>
+</html>

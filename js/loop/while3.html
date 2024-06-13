@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>반복문 제어 2</title>
+</head>
+<body>
+<!-- 
+  'y'를 누르면 반복
+  'n'를 누리면 중단
+  그 외는 잘 못 눌렀다.
+ -->
+  <script>
+
+  while(true){
+    let key = prompt("게속 반복할까요?", "y / n");
+    if(key === "y" || key === 'Y'){
+      alert("계속 반복합니다.");
+    } else if(key === "n" || key === 'N'){
+      alert("중단합니다.");
+      break;
+    } else{
+      alert("키를 잘못 눌렀습니다.");
+    }
+  }
+  document.write("프로그램 종료");
+
+  </script>
+  
+</body>
+</html>
