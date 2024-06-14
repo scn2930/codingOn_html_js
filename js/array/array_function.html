@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문자열 관련 메서드(함수)</title>
+</head>
+<body>
+  
+  <script>
+    let str = 'Happy day~!';
+    
+    // 대문자로 변환 - toUpperCase();
+    console.log(str.toUpperCase());
+    
+    // 소문자로 변환 - toLowerCase();
+    console.log(str.toLowerCase());
+    
+    // 위치 - IndexOf();
+    console.log(str.indexOf('p'));
+    console.log(str.lastIndexOf('p'));
+    
+    // 글자 대체 - replace();
+    console.log(str.replace('y', '1'));
+    console.log(str.replaceAll('y', 'm'));
+    
+    // 기호를 통해 글자 분리 - split() -> 배열로 저장
+    console.log(str.split(' '));
+    console.log(str.split(' ')[1]);
+    
+
+    let str2 = '   Happy day~!     ';
+
+    // 좌우의 공백 제거 - trim();
+    console.log(str2);
+    console.log(str2.trim());
+
+
+  </script>
+</body>
+</html>

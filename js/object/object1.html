@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>객체 예제</title>
+</head>
+<body>
+  
+  <script>
+    let person = {
+      name : '이강인',
+      age : 23,
+      isMerried: false,
+      history : {
+        firstTeam : '발렌시아CF',
+        nowTeam : '파리 생제르맹' 
+      },
+      bodySpac : [174, 71, 270],
+      play: function(){
+        alert('골을 넣는다!!')
+      }
+    }
+
+    console.log(person);
+    console.log(person.name);
+    console.log(person.isMerried);
+    console.log(person.history.firstTeam);
+    console.log(person.bodySpac[0]);
+    // console.log(person.play());
+
+
+    let book = {
+      title : '웹 표준의 정석',
+      author : '고경희',
+      page : 600,
+      price : 30000,
+      info: function(){
+        alert(this.title + '의 분량은 ' + this.page + '페이지입니다.');
+      }
+    }
+
+    document.write(book.title);
+    document.write('<br>');
+    document.write(book.author);
+    document.write('<br>');
+    document.write(book.page);
+    document.write('<br>');
+    document.write(book.price);
+    document.write('<br>');
+    book.info();
+
+
+
+  </script>
+
+</body>
+</html>

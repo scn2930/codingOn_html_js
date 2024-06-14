@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배열의 최대,최소 값 구하기</title>
+</head>
+<body>
+  <h2>배열의 최대 값, 최소 값 계산</h2>
+
+  <script>
+    let scores = [70, 80, 90, 65, 77, 44];
+    let maxVal = scores[0];
+    let minVal = scores[0];
+
+    for(let i  in scores){
+      if(maxVal < scores[i]){
+        maxVal = scores[i];
+      } else{
+        maxVal;
+      }
+    }
+    for(let j  in scores){
+      if(minVal > scores[j]){
+        minVal = scores[j];
+      } else{
+        minVal;
+      }
+    }
+    document.write('최대 값 : ' + maxVal);
+    document.write('<br>');
+    document.write('최대 값의 인덱스: ' + scores.indexOf(maxVal));
+    document.write('<br>');
+    document.write('최소 값 : ' + minVal);
+    document.write('<br>');
+    document.write('최소 값의 인덱스: ' + scores.indexOf(minVal));
+
+    let spreadMax = Math.max(...scores);
+    let spreadMin = Math.min(...scores);
+
+    document.write('<hr>');
+    document.write('스프레드 문법');
+    document.write('<br>');
+    document.write('최대 값 : ' + spreadMax);
+    document.write('<br>');
+    document.write('최소 값 : ' + spreadMin);
+
+
+  </script>
+
+
+</body>
+</html>
