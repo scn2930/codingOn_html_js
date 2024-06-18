@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>객체 자료형</title>
+</head>
+
+<body>
+
+<script>
+  let car = {
+    brand: "현대",
+    name: "Ionic6",
+    color: "silver",
+    cc: 2500,
+    price: 6000,
+    charge: function(){
+      document.write("전기로 충전합니다.");
+    }
+
+  }
+
+  document.write(`브랜드 : ${car.brand} <br>색깔 : ${car.color}<br>배기량 : ${car.cc}<br>가격 : ${car.price}<br>`);
+  car.charge();
+</script>
+
+
+
+</body>
+
+</html>

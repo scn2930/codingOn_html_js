@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>onclick객체</title>
+</head>
+<body>
+  <div id="content">
+    <img src="../../html/img/img_girl.jpg" alt="여자" id="fruit" width="300px">
+  </div>
+
+  <script>
+    let fruitImg = document.querySelector("#fruit");
+    // changePic 함수에서 ()를 하면 함수 맨위로 올라가서 실행된다.(호이스팅)
+    fruitImg.onclick = changePic;
+
+    function changePic(){
+      fruitImg.src = "../../html/img/watermelon.jpg";
+    }
+
+    // toggle 구현하기
+    let sw = true;   //상태 변수
+    fruitImg.onclick = function(){
+      if(sw){
+        fruitImg.src = "../../html/img/watermelon.jpg";
+        sw = false;
+      }else{
+        fruitImg.src = "../../html/img/img_girl.jpg";
+        sw = true;  
+      }
+    }
+
+
+
+  </script>
+
+</body>
+</html>

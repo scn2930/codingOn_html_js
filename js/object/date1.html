@@ -40,8 +40,27 @@
     document.write('<br>')
     
     // 1970.01.01 자정을 기준으로 현재까지의 시간을 밀리초(1000분의 1초)로 출력
-    document.write("현재까지의 시간 : " + now.getTime()/1000+ "초");
+    document.write("현재까지의 시간 : " + now.getTime()/1000+ "초<br>");
     
+    // 일로 환산  
+    let day =  now.getTime() / (1000 * 24 * 60 * 60);
+    document.write("현재까지의 시간 : " + Math.round(day)+ "일<br>");
+    
+    // 년으로 환산
+    document.write("현재까지의 시간 : " + Math.round(day)/365+ "년<br>");
+
+    // 개강한 후 지낸 시간(2024.05.29)
+    let today = new Date();
+    console.log(today);
+
+    let theDay = new Date("2024.05.29");
+    console.log(theDay);
+
+    let pasted = today - theDay;
+    pasted = Math.round(pasted / (1000 * 60 * 60 * 24));
+    console.log(`개강 후 ${pasted}일 지났습니다.`);
+    
+
   </script>
 
 </body>

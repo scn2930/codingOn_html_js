@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>함수의 정의와 호출</h2>
+
+  <script>
+
+    //1을 더하는 함수
+    function addOne(x){
+      return x + 1;
+    }
+
+    let addOne2 = function(x){
+      return x + 1;
+    }
+
+    let addOne3 = (x) =>{
+      return x + 1;
+    }
+
+    // 함수 호출
+    console.log(addOne(10));
+    console.log(addOne2(10));
+    console.log(addOne3(10));
+    // console.log(x); -> 지역변수 x는 값을 반환하고 메모리에서 사라진다.
+
+    
+    // 전역 변수 사용(보통 함수나 제어문 위에 위치!!!!)
+    let y = 1;
+    let multi = function(){
+      y = y * 2;
+      return y;
+    }
+
+    console.log(multi());
+    console.log(multi());
+    console.log(y);      
+
+  </script>
+
+
+</body>
+</html>

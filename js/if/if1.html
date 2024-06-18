@@ -36,11 +36,15 @@
 
   /* let num = prompt("숫자를 입력하세요");
   num = parseInt(num);
-  if(num % 2 == 0){
+  if(num === null || isNaN(num) || num < 0){
+    document.write("잘못 입력하였습니다.")
+  }else {
+    if(num % 2 == 0){
     document.write("짝수입니다.<br>");
-  } else{
+    } else{
     document.write("홀수입니다.<br>");
-  }*/
+    }
+  } */
   </script> -->
 <h2>놀이공원 입장료 계산</h2>
 <!-- 

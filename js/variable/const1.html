@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상수(Constant Number) 예제</title>
+</head>
+<body>
+  <h2>상수</h2>
+
+  <script>
+    /*상수 - 변하지 않는 진리(12개월), 공식(원주율)
+       키워드(자료형) : const , 값은 대문자(관례)
+      상수를 선언하여 값을 저장하면 수정할 수 없다.
+    */
+
+    const MONTH = 12;
+    console.log(MONTH);
+
+    // MONTH = 1;  -> 오류 : const는 재할당 불가.
+
+    const PI = 3.14;
+
+   function circle(r){
+    return r *r*PI;
+   }
+
+   console.log(circle(4));
+
+  //  템플릿 문자열 방식(백틱, ${})
+  console.log(`안녕하세요 ${PI}`)
+
+  </script>
+
+</body>
+</html>

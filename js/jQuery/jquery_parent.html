@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery parent</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+    <style>
+      .content{
+        width: 500px;
+        margin: 0 auto;
+      }
+      .wrap *{
+        display: block;
+        margin: 16px;
+        padding: 5px;
+        color: lightgray;
+        border: 1px solid #ddd;
+      }
+    </style>
+    <script>
+      $(function(){
+        // next() -> 바로 다음 요소
+        $('span').parent().next().css('border', '2px solid blue');
+        
+        // children() -> 자식요소
+        $('ul').children().css('color', 'pink');
+        
+        // parent() -> 직계 부모
+        $('span').parent().css('color', 'red');
+
+        // find('태그') -> 하위 태그 찾기 
+        $('ul').find('span').css({color: 'green', fontWeight: 'bold'});
+
+
+      });
+    </script>
+
+</head>
+
+<body>
+ <div class="content">
+  <div class="wrap">
+    <ul>ul(grand parent)
+      <li>li (direct parent)
+        <span>span</span>
+      </li>
+      <li>li (parent)</li>
+      <li>li (parent)</li>
+    </ul>
+  </div>
+ </div>
+
+</body>
+
+</html>

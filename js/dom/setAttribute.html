@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>태그의 속성 제어</title>
+</head>
+
+<body>
+  <h2>태그에 속성 설정하기</h2>
+  <div class="pic">
+    <div>
+      <img src="../../html/img/watermelon.jpg" alt="수박" class="big" width="500px">
+    </div>
+    <div>
+      <img src="../../html/img/ocean.jpg" alt="바다" class="small" width="100px">
+    </div>
+  </div>
+
+  <script>
+    let bigPic = document.querySelector(".big");
+    let smallPic = document.querySelector(".small");
+
+    smallPic.onclick = function(){
+      bigPic.setAttribute("src", "../../html/img/img_girl.jpg");
+    }
+
+  </script>
+</body>
+
+</html>

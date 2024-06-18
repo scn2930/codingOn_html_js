@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>addEventListener() 예제</title>
+</head>
+<body>
+  
+  <div id="content">
+    <img src="../../html/img/img_girl.jpg" alt="여자" id="fruit" width="300px">
+  </div>
+
+    <script>
+  let fruitImg = document.querySelector("#fruit");
+
+  // 실행 함수(익명 함수)
+  fruitImg.addEventListener('mouseover', () => {
+    fruitImg.src = "../../html/img/watermelon.jpg";
+  });
+  
+  fruitImg.addEventListener('mouseout', function(){
+    fruitImg.src = "../../html/img/img_girl.jpg";
+  });
+
+
+  /*    function changePic() {
+        fruitImg.src = "../../html/img/watermelon.jpg";
+       }
+       
+       function originPic() {
+         fruitImg.src = "../../html/img/img_girl.jpg";
+        }
+       
+
+      fruitImg.addEventListener('mouseover', changePic);
+      fruitImg.addEventListener('mouseout', originPic);*/
+
+    
+
+
+    </script>
+
+
+
+</body>
+</html>

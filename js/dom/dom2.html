@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>태그와 노드</title>
+</head>
+<body>
+  <div id="parent">
+    Text
+    <div id="two">div 두번째 Text</div>
+    <div>div 세번째 Text</div>
+  </div>
+
+  <script>
+    let parent = document.getElementById("parent");
+    console.log(parent);
+
+    let children = parent.children;
+    console.log(children);
+
+    let childNodes = parent.childNodes;
+    console.log(childNodes);
+
+    // 태그와 텍스트 생성하기
+    // 자식 추가(태그와 텍스트) - 추가할 부모 선택(접근) -> 추가할 자식 생성(태그와 텍스트)-> 자식을 연결하기
+    let child1 = document.createElement("div");
+    child1.innerText = '네번째 Text';
+    parent.appendChild(child1);
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery 예제</title>
+  <!-- jquery 연결 -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  </head>
+  <body>
+  <p id="show">
+
+  </p>
+  <div class="pic">
+
+  </div>
+
+  <script>
+  // 자바스크립트 방식(실행)
+  // 윈도우가 실행될때 데이터가 로드
+  // window.onload = function(){
+  //   document.getElementById('show').innerHTML = "안녕~~~";
+  // }
+  
+  //jQuery(실행)
+  $(document).ready(function(){
+    // 선택자(태그, id, class)는 '$(선택자)안에 기입'
+    // text(문자) -> InnerText
+    // html(태그, 문자) -> innerHTML
+    $('#show').text("안녕하세요~")
+    //  체이닝 방식
+    $('#show').html("<h2>안녕하세요~<h2>")
+                      // .css("color", "red");
+                      .css({'color': "red", 'background-color': "green"});
+  
+    $('.pic').html("<img src = './img/watermelon.jpg' alt = '수박'> ")
+                  // .children().css('border-radius', '10px');
+    $('.pic img').css("border-radius", '20px');
+              
+  }); 
+  
+  </script>
+</body>
+</html>
