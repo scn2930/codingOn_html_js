@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+    <script>
+$(function(){
+$("#name").css('color', 'blue');
+$("#name").css({backgroundColor: 'coral', fontSize: '20px'});
+// append() -> 선택한 요소의 자식 요소 끝에 추가
+$('.info').append('<p>만나서 반갑습니다.</p>');
+$(".pic").html("<img src = './img/watermelon.jpg' width = '300px'>")
+$('.pic img').css('border-radius', '10px');
+});
+
+    </script>
+
+</head>
+<body>
+  <h2>방문을 환영합니다.</h2>
+<div class="info">
+  <p id="name">내 이름은 fed입니다.</p>
+  <p>나는 서울에 살아요</p>
+</div>
+<div class="pic">
+
+</div>
+</body>
+</html>
