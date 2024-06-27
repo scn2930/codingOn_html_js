@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>객체와 Json 호환</title>
+</head>
+<body>
+  <script>
+    // 객체 - {}사용. key: value 형태
+    let fruit_object = {
+      name: '사과',
+      price: 3000,
+      color: 'red'
+    }
+    console.log( fruit_object);
+
+    // 객체 -> json 변환
+   let fruit_json = JSON.stringify(fruit_object);
+   console.log(fruit_json);
+   
+   let fruit_object2 = JSON.parse(fruit_json);
+   console.log(fruit_object2);
+
+  </script>
+</body>
+</html>
